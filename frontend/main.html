@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDG Map</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- start page-->
+    <div class="start-page">
+        <div class="button-container">
+            <button onclick="startGame()"><img src="images/startGame.png" width="350px" alt="start-game"></button>
+        </div>
+    </div>
+
+    <div class="login-page">
+        
+        <div class="pink-box">
+           
+            <form>
+                <h2>Enter your name</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <h2>Enter your password</h2>
+                <label for="password">Password:</label>
+                <textarea id="password" name="password"></textarea>
+                <br>
+                <div class="button-container">
+                    <button onclick="clickhere()"><img src="images/clickhere.png" width="350px" alt="click-here"></button>
+                </div>
+
+                <div class="guide">
+                    <img src="images/guides.png" alt="guides" width="800px">
+                </div>
+                <a onclick="back()" href="#" class="back-button"><img src="images/back.png" alt="back"></a>
+            </form> 
+           
+        </div>
+           
+    </div>
+
+    <!-- Background Image Container -->
+    <div class="map-container" id="dashboardcontainer" style="display: none;">
+        <img src="map.png" alt="SDG Map" class="map-image">
+
+        <!-- SDG Buttons -->
+        <a href="#" class="sdg-btn" data-toggle="modal" data-target="#sdg1Modal" style="bottom: 15%; right: 15%;"><img src="images/sdg1.png" alt="sdg1" width="90px"></a>
+        <div class="modal fade" id="sdg1Modal" tabindex="-1" role="dialog" aria-labelledby="sdg1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="sdg1ModalLabel">SDG 1: No Poverty</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="video-container">
+                      <iframe width="750" height="350" src="https://www.youtube.com/embed/T7qiM0quEf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+
+                  <div class="next-button"><button><img src="images/next.png" alt="next"></button></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+
+        <a href="#" class="sdg-btn" data-toggle="modal" data-target="#sdg2Modal" style="bottom: -3%; right: 27%;"><img src="images/sdg2.png" alt="sdg2" width="90px"></a>
+        <div class="modal fade" id="sdg2Modal" tabindex="-1" role="dialog" aria-labelledby="sdg1ModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="sdg1ModalLabel">SDG 1: No Poverty</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="video-container">
+                      <iframe width="750" height="350" src="https://www.youtube.com/embed/T7qiM0quEf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                  </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <a href="#" class="sdg-btn" style="bottom: -1%; right: 40%;"><img src="images/sdg3.png" alt="sdg3" width="90px"></a>
+        <a href="#" class="sdg-btn" style="bottom: -5%; right: 53%;"><img src="images/sdg4.png" alt="sdg4" width="90px"></a>
+        <a href="#" class="sdg-btn" style="bottom: -13%; right: 65%;"><img src="images/sdg5.png" alt="sdg5" width="90px"></a>
+        <a href="#" class="sdg-btn" style="bottom: -9%; right: 77%;"><img src="images/sdg6.png" alt="sdg6" width="90px"></a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 7</a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 8</a>
+        <a href="#" class="sdg-btn" style="top: 70%; left: 10%;"> <img src="images/sdg9.png" alt="sdg9" width="90px"></a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 10</a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 11</a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 12</a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 13</a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 10%;"> <img src="images/sdg14.png" alt="sdg9" width="90px"></a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 15</a>
+        <a href="#" class="sdg-btn" style="top: 20%; left: 30%;"> <img src="images/sdg16.png" alt="sdg9" width="90px"></a>
+        <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 17</a>
+        <a href="#" class="sdg-btn" style="top: 5%; left: 70%;"> <img src="images/milestone.png" alt="sdg9" width="90px"></a>
+        <!-- Add more SDG buttons as needed -->
+
+        <!-- Sidebar/Menu -->
+        <div class="menu-container">
+            <a href="#" class="active" data-bg="images/map.png" data-toggle="modal" data-target="#mapModal">
+                <img src="images/map-active.png" alt="map" class="btn-img" data-default="images/map.png" data-active="images/map-active.png">
+            </a>
+            <a href="#" data-bg="images/loginpage.png" data-toggle="modal" data-target="#quizModal">
+                <img src="images/quiz.png" alt="quiz" class="btn-img" data-default="images/quiz.png" data-active="images/quiz-active.png">
+            </a>
+            <a href="#" data-bg="images/loginpage.png" data-toggle="modal" data-target="#scoreModal">
+                <img src="images/score.png" alt="score" class="btn-img" data-default="images/score.png" data-active="images/score-active.png">
+            </a>
+            <a href="#" data-bg="images/loginpage.png" data-toggle="modal" data-target="#challengeModal">
+                <img src="images/challenge.png" alt="challenge" class="btn-img" data-default="images/challenge.png" data-active="images/challenge.png">
+            </a>
+        </div>
+        
+        
+
+
+  
+  <!-- Quiz Modal -->
+  <div class="modal fade" id="quizModal" tabindex="-1" role="dialog" aria-labelledby="quizModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="quizModalLabel">SDG Random Quiz Test</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Content for Quiz -->
+          <button><img src="images/certificate.png" alt="certificate" width="750px" height="100px"></button>
+          
+          <button><img src="images/simplequiz.png" alt="simple quiz" width="750px" height="100px"></button>
+         
+          <button><img src="images/hardquiz.png" alt="hard quiz" width="750px" height="100px"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Score Modal -->
+  <div class="modal fade" id="scoreModal" tabindex="-1" role="dialog" aria-labelledby="scoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="scoreModalLabel">Leader board</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="leaderboard">
+            <img src="images/leaderboard.png" alt="leaderboard" width="750px" height="400px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Challenge Modal -->
+  <div class="modal fade" id="challengeModal" tabindex="-1" role="dialog" aria-labelledby="challengeModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="challengeModalLabel">Challenge</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Content for Challenge -->
+          <p>Here is the content for the challenge screen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+        <a onclick="back()" href="#" class="back-button"><img src="images/back.png" alt="back"></a>
+
+        <!-- Title -->
+        <div class="title">
+            <img src="images/sdgMap.png" alt="sdg map" width="200px">
+        </div>
+
+        <!-- Settings (Gear Icon) -->
+        <div class="settings-icon">
+            <img src="images/settings.png" alt="Settings">
+        </div>
+    </div>
+
+
+    <script>
+        function startGame() {
+            // Hide the start page
+            document.querySelector('.start-page').style.display = 'none';
+        
+            // Show the map container
+            document.querySelector('.login-page').style.display = 'block';
+        }
+
+            
+      function clickhere(){
+            //login page hide
+            document.querySelector('.login-page').style.display = 'none';
+            
+            //show map contianer
+            document.querySelector('.map-container').style.display = 'block';
+        }
+        
+        function back() {
+      //go back
+            document.querySelector('.settings-icon').style.display = "none";
+            document.querySelector('.start-page').style.display = "block";
+            document.querySelector('.map-container').style.display = "none";
+    }
+        </script>
+<script>
+$(document).ready(function() {
+    $('.menu-container a').click(function(event) {
+        event.preventDefault();  // Prevent the default link behavior
+
+        // Reset all buttons to default images
+        $('.menu-container a img').each(function() {
+            $(this).attr('src', $(this).data('default'));
+        });
+
+        // Set the clicked button to active image
+        $(this).find('img').attr('src', $(this).find('img').data('active'));
+
+        // Remove 'active' class from all buttons
+        $('.menu-container a').removeClass('active');
+
+        // Add 'active' class to the clicked button
+        $(this).addClass('active');
+
+        // Change the background of the map-container based on data-bg attribute
+        var newBg = $(this).data('bg');  // Get the path from data-bg attribute
+        $('.map-container').css('background-image', 'url(' + newBg + ')');  // Apply as background image
+    });
+});
+
+    </script>
+            
+
+</body>
+</html>

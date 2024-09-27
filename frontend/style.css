@@ -207,20 +207,6 @@ body, html {
     padding: 0;               
 }
 
-.next-button {
-    display: flex;               /* Use flexbox to align items */
-    justify-content: flex-end;  /* Align items to the right */
-    margin-top: 20px;           /* Add some space above the button */
-}
-
-.next-button button {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.next-button button:hover {
-    background-color: #0056b3;  /* Darker background on hover */
-}
 
 
 /*score*/

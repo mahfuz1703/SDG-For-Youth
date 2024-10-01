@@ -21,21 +21,19 @@
         </div>
     </div>
 
-    <div class="login-page">
-        
+    <div class="login-page" style="display: none;">
         <div class="pink-box">
-           
             <form>
                 <h2>Enter your name</h2>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
                 <br>
                 <h2>Enter your password</h2>
                 <label for="password">Password:</label>
-                <textarea id="password" name="password"></textarea>
+                <input type="password" id="password" name="password" required>
                 <br>
                 <div class="button-container">
-                    <button onclick="clickhere()"><img src="images/clickhere.png" width="350px" alt="click-here"></button>
+                    <button type="button" onclick="clickhere()"><img src="images/clickhere.png" width="350px" alt="click-here"></button>
                 </div>
 
                 <div class="guide">
@@ -43,9 +41,7 @@
                 </div>
                 <a onclick="back()" href="#" class="back-button"><img src="images/back.png" alt="back"></a>
             </form> 
-           
         </div>
-           
     </div>
 
     <!-- Background Image Container -->
@@ -55,46 +51,42 @@
         <!-- SDG Buttons -->
         <a href="#" class="sdg-btn" data-toggle="modal" data-target="#sdg1Modal" style="bottom: 15%; right: 15%;"><img src="images/sdg1.png" alt="sdg1" width="90px"></a>
         <div class="modal fade" id="sdg1Modal" tabindex="-1" role="dialog" aria-labelledby="sdg1ModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="sdg1ModalLabel">SDG 1: No Poverty</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="video-container">
-                      <iframe width="750" height="350" src="https://www.youtube.com/embed/T7qiM0quEf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  </div>
-
-                  <div class="next-button"><button><img src="images/next.png" alt="next"></button></div>
-                  
-                  </div>
-              </div>
-          </div>
-      </div>
-      
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sdg1ModalLabel">SDG 1: No Poverty</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <iframe width="750" height="350" src="https://www.youtube.com/embed/T7qiM0quEf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="next-button"><button><img src="images/next.png" alt="next"></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <a href="#" class="sdg-btn" data-toggle="modal" data-target="#sdg2Modal" style="bottom: -3%; right: 27%;"><img src="images/sdg2.png" alt="sdg2" width="90px"></a>
-        <div class="modal fade" id="sdg2Modal" tabindex="-1" role="dialog" aria-labelledby="sdg1ModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="sdg1ModalLabel">SDG 1: No Poverty</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="video-container">
-                      <iframe width="750" height="350" src="https://www.youtube.com/embed/T7qiM0quEf4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                  </div>
-                  </div>
-              </div>
-          </div>
-      </div>
+        <div class="modal fade" id="sdg2Modal" tabindex="-1" role="dialog" aria-labelledby="sdg2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="sdg2ModalLabel">SDG 2: Zero Hunger</h5> <!-- Changed title -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="video-container">
+                            <iframe width="750" height="350" src="https://www.youtube.com/embed/EXAMPLE2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <a href="#" class="sdg-btn" style="bottom: -1%; right: 40%;"><img src="images/sdg3.png" alt="sdg3" width="90px"></a>
         <a href="#" class="sdg-btn" style="bottom: -5%; right: 53%;"><img src="images/sdg4.png" alt="sdg4" width="90px"></a>
@@ -112,7 +104,7 @@
         <a href="#" class="sdg-btn" style="top: 20%; left: 30%;"> <img src="images/sdg16.png" alt="sdg9" width="90px"></a>
         <a href="#" class="sdg-btn" style="top: 30%; left: 50%;">SDG 17</a>
         <a href="#" class="sdg-btn" style="top: 5%; left: 70%;"> <img src="images/milestone.png" alt="sdg9" width="90px"></a>
-        <!-- Add more SDG buttons as needed -->
+       
 
         <!-- Sidebar/Menu -->
         <div class="menu-container">
@@ -186,13 +178,64 @@
           </button>
         </div>
         <div class="modal-body">
-          <!-- Content for Challenge -->
-          <p>Here is the content for the challenge screen.</p>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/SDGGlobalMap.png" alt="SDG Global Map" width="230px" id="globalmap" class="clickable-img menu-image">
+                    <h5 style="font-weight: bold; text-align: center;">SDG Global Map</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/SDG-logo.png" alt="SDG Logo" width="230px" class="menu-image"> 
+                </div>
+                <div class="col-md-4">
+                    <img src="images/sdgtoday.png" alt="SDG Today Data" width="230px" id="todayimage" class="clickable-img menu-image">
+                    <h5 style="font-weight: bold; text-align: center;">SDG Today Data</h5>
+                </div>
+                <div class="col-md-4" style="padding-top: 20px;">
+                    <img src="images/aqueduct.png" alt="Aqueduct Water Risk" width="230px" id="aqueductimage" class="clickable-img menu-image">
+                    <h5 style="font-weight: bold; text-align: center;">Aqueduct Water Risk</h5>
+                </div>
+                <div class="col-md-4" style="padding-top: 20px;">
+                    <img src="images/aquamaps.png" alt="Aquamaps" width="230px" id="aquamapsimage" class="clickable-img menu-image"> 
+                    <h5 style="font-weight: bold; text-align: center;">Aquamaps</h5>
+                </div>
+                <div class="col-md-4" style="padding-top: 20px;">
+                    <img src="images/worldview.png" alt="Worldview" width="230px" id="worldimage" class="clickable-img menu-image">
+                    <h5 style="font-weight: bold; text-align: center;">Worldview</h5>
+                </div>
+            </div>
+            <div class="modal fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel">Challenges</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                      
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-8"> 
+                                    <iframe id="modalIframe" src="" style="width: 100%; height: 400px; border: none;"></iframe>
+                                </div>
+                                <div class="col-md-2"> 
+                                    <img src="images/options.png" alt="options" width="250px" style="padding-right: 20px; padding-top: 20px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   
+
+
+
 
         <a onclick="back()" href="#" class="back-button"><img src="images/back.png" alt="back"></a>
 
@@ -202,64 +245,92 @@
         </div>
 
         <!-- Settings (Gear Icon) -->
-        <div class="settings-icon">
+        <div class="settings-icon" style="display: none;"> <!-- Initially hidden -->
             <img src="images/settings.png" alt="Settings">
         </div>
     </div>
-
 
     <script>
         function startGame() {
             // Hide the start page
             document.querySelector('.start-page').style.display = 'none';
-        
-            // Show the map container
+            // Show the login page
             document.querySelector('.login-page').style.display = 'block';
         }
 
-            
-      function clickhere(){
-            //login page hide
+        function clickhere() {
+            // Hide login page
             document.querySelector('.login-page').style.display = 'none';
-            
-            //show map contianer
+            // Show map container
             document.querySelector('.map-container').style.display = 'block';
         }
-        
+
         function back() {
-      //go back
-            document.querySelector('.settings-icon').style.display = "none";
+            // Go back
+            document.querySelector('.settings-icon').style.display = "none"; // Adjust as needed
             document.querySelector('.start-page').style.display = "block";
             document.querySelector('.map-container').style.display = "none";
-    }
-        </script>
+            document.querySelector('.login-page').style.display = "none"; // Hide the login page when going back
+        }
+  
+    </script>
+<script>
+    $(document).ready(function() {
+        $('.menu-container a').click(function(event) {
+            event.preventDefault();  
+    
+            $('.menu-container a img').each(function() {
+                $(this).attr('src', $(this).data('default'));
+            });
+    
+            $(this).find('img').attr('src', $(this).find('img').data('active'));
+            $('.menu-container a').removeClass('active');
+            $(this).addClass('active');
+    
+            var newBg = $(this).data('bg');  
+            $('.map-container').css('background-image', 'url(' + newBg + ')');  
+        });
+    });
+    </script>
+    
 <script>
 $(document).ready(function() {
-    $('.menu-container a').click(function(event) {
-        event.preventDefault();  // Prevent the default link behavior
+    $('.menu-image').click(function() {
+        let clickedImage = $(this).attr('id');
+        let iframeUrl;
 
-        // Reset all buttons to default images
-        $('.menu-container a img').each(function() {
-            $(this).attr('src', $(this).data('default'));
-        });
+        // Determine the URL to load based on the clicked image
+        if (clickedImage === 'globalmap') {
+            iframeUrl = 'https://dashboards.sdgindex.org/map'; 
+        } else if (clickedImage === 'todayimage') {
+            iframeUrl = 'https://sdgstoday.org/'; 
+        } else if (clickedImage === 'aqueductimage') {
+            iframeUrl = 'https://www.wri.org/applications/aqueduct/floods/#/?p=eyJjb21tb24iOnsiZ2VvZ3VuaXRfdW5pcXVlX25hbWUiOiJKYXBhbiIsInNjZW5hcmlvIjoiYnVzaW5lc3MgYXMgdXN1YWwifSwiaGF6YXJkIjp7InllYXIiOiIyMDEwLjAiLCJmbG9vZCI6ImludW5yaXZlciIsInNjZW5hcmlvIjoicmNwOHA1IiwicHJvamVjdGlvbl9tb2RlbCI6IjAwMDBHRkRMLUVTTTJNIiwic3ViX3NjZW5hcmlvIjp0cnVlfSwicmlzayI6eyJzY2VuYXJpbyI6ImJ1c2luZXNzIGFzIHVzdWFsIiwiZmxvb2QiOiJyaXZlcmluZSIsImV4cG9zdXJlIjoidXJiYW5fZGFtYWdlX3YyIiwiZXhpc3RpbmdfcHJvdCI6bnVsbCwic3ViX3NjZW5hcmlvIjpmYWxzZSwiYWR2YW5jZWRfc2V0dGluZ3MiOmZhbHNlfSwiY2JhIjp7ImV4aXN0aW5nX3Byb3QiOm51bGwsInByb3RfZnV0IjpudWxsLCJyZWZfeWVhciI6MjA1MCwiaW1wbGVtZW50YXRpb25fc3RhcnQiOjIwMjAsImltcGxlbWVudGF0aW9uX2VuZCI6MjA0MCwiaW5mcmFzdHJ1Y3R1cmVfbGlmZSI6ODAsImJlbmVmaXRzX3N0YXJ0IjoyMDI1LCJ1c2VyX3VyYl9jb3N0IjpudWxsLCJkaXNjb3VudF9yYXRlIjo1LCJvbV9jb3N0cyI6MX0sImFjdGl2ZUxheWVycyI6WyIwNzM4N2RmNC1lMWM5LTQ5ZjQtOGZiNC0xZGMxNzY5YzE2NjMiLCI4NzQwMjhmZS03ZTNiLTQyNDgtOGUwZi01YTRiZTI0NTBkMDYiLCI2NmE3MjY0OC01MmQ5LTQ0YzMtOTE5ZC01MmZiY2YxYzU0ODMiLCJlYjlmOGY2Yy1hNzM3LTQyNGEtODRhYS0zMGQ1YTRiMzkzZjYiLCI0NjA3YWRjZC00OWIyLTRkOWQtYWVhOC0xY2M0OTBmYzhmZjkiLCI4MWRmZDE4Yy00MWY3LTQ0MTctOTQ4Ny1kYmU4NGEwNWFmNWYiLCI2YWUzOGNlMy1lOWM3LTRmZjctOTQzMS1kMGVhNWU5OWM1MzMiLCIxOGQ2ZmQyYy1hODFjLTRmNDgtOTgzMS04NTNlYjA4N2E3NDAiLCJkY2Y1ZjA2MC0zNjcwLTRhOTItOTY0Ni01ZDVhM2I1OTJmODYiXSwibWFwIjp7ImJvdW5kcyI6e30sImJhc2VtYXAiOiJoeWRybyIsImJvdW5kYXJpZXMiOnRydWUsInJldHVyblBlcmlvZCI6IjAwMDIifX0='; 
+        } else if (clickedImage === 'aquamapsimage') {
+            iframeUrl = 'https://data.apps.fao.org/aquamaps/?lang=en'; 
+        } else if (clickedImage === 'worldimage') {
+            iframeUrl = 'https://www.earthdata.nasa.gov/worldview';
+        }
 
-        // Set the clicked button to active image
-        $(this).find('img').attr('src', $(this).find('img').data('active'));
+        // Set the iframe src and show the modal
+        $('#modalIframe').attr('src', iframeUrl);
+        $('#detailsModal').modal('show');
 
-        // Remove 'active' class from all buttons
-        $('.menu-container a').removeClass('active');
+        // Hide the challenge section
+        $('.challenge-section').hide();
+    });
 
-        // Add 'active' class to the clicked button
-        $(this).addClass('active');
-
-        // Change the background of the map-container based on data-bg attribute
-        var newBg = $(this).data('bg');  // Get the path from data-bg attribute
-        $('.map-container').css('background-image', 'url(' + newBg + ')');  // Apply as background image
+    // Optional: Show the challenge section again when the modal is closed
+    $('#detailsModal').on('hidden.bs.modal', function () {
+        $('.challenge-section').show();
+        $('#modalIframe').attr('src', ''); // Clear the iframe src
     });
 });
 
-    </script>
-            
 
+</script>
+
+
+        
 </body>
 </html>

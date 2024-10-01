@@ -28,7 +28,7 @@ Welcome to <strong>SDG for Youth</strong>, an educational and interactive web-ba
 ## Tools
     1. Visual Studio Code
     2. Figma
-    3. Premiere Pro, After Effect, Capcut
+    3. Premiere Pro, After Effect, Adobe Audition, Photoshop and Illustrator.
     4. GitHub
 
 ## Technologies

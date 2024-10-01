@@ -37,7 +37,31 @@ Welcome to <strong>SDG for Youth</strong>, an educational and interactive web-ba
 
 ## Prototype [(Link)](https://www.figma.com/proto/i2k9XYYWyMnE58SZ61E1N1/Game?page-id=0%3A1&node-id=2-3&node-type=canvas&viewport=1116%2C384%2C0.25&t=7sy5U2FfChZoZwdH-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A3)
 
-<img src="frontend/prototype/1.png" width="400">
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/1.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/2.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/3.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/4.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/5.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/6.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/7.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/8.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/9.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/21.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/10.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/11.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/12.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/13.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/14.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/15.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/16.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/17.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/18.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/19.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/20.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/22.png?raw=true)
+![prototype](https://github.com/mahfuz1703/SDG-For-Youth/blob/main/frontend/prototype/23.png?raw=true)
+
+<!-- <img src="frontend/prototype/1.png" width="400">
 <img src="frontend/prototype/2.jpg" width="400">
 <img src="frontend/prototype/3.jpg" width="400">
 <img src="frontend/prototype/4.jpg" width="400">
@@ -59,7 +83,7 @@ Welcome to <strong>SDG for Youth</strong>, an educational and interactive web-ba
 <img src="frontend/prototype/19.jpg" width="400">
 <img src="frontend/prototype/20.jpg" width="400">
 <img src="frontend/prototype/22.jpg" width="400">
-<img src="frontend/prototype/23.jpg" width="400">
+<img src="frontend/prototype/23.jpg" width="400"> -->
 
 <br>
 
